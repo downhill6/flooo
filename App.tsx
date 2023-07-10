@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
+import React, {useEffect} from 'react';
+import {StyleSheet, Text, View, Button, SafeAreaView} from 'react-native';
 
 export default function App() {
   useEffect(() => {
@@ -11,6 +11,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Thanks god</Text>
+      <Button title="submit" />
       <StatusBar style="auto" />
     </View>
   );
