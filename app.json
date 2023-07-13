@@ -3,14 +3,14 @@
     "name": "flooo",
     "slug": "flooo",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "scheme": "com.downhill.flooo",
+    "assetBundlePatterns": ["**/*"],
     "android": {
       "package": "com.downhill.flooo"
     },
     "ios": {
       "bundleIdentifier": "com.downhill.flooo"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
