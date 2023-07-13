@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <Box
-      bg="primary.background"
+      bg="custom.background"
       h="12"
       px="6"
       alignItems="center"
@@ -25,10 +25,10 @@ export function Header() {
         color="icon.default"
         onPress={onOpenMenu}
       />
-      <Heading size="xs" fontSize={18} pl="2">
+      <Heading size="xs" fontSize={18} pl="2" flex="1">
         flooo
       </Heading>
-      <Box flex="1" alignItems="flex-end">
+      <Box alignItems="flex-end">
         <Icon
           as={Ionicons}
           name="search"

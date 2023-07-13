@@ -7,10 +7,11 @@ import {NativeBaseProvider, extendTheme} from 'native-base';
 export default function Layout() {
   const theme = extendTheme({
     colors: {
-      primary: {
+      custom: {
         background: '#fafafan',
         text: '#1a1a1a',
         card: '#ffffff',
+        gray: '#9d9c9d',
       },
       icon: {
         default: '#9b9b9b',
