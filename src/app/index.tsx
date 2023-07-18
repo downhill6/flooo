@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Header} from '../components/header';
 import {CardList} from '../components/card-list';
+import {Footer} from '../components/footer';
 
 export default function Home() {
   const [data, setData] = useState([
@@ -12,6 +13,7 @@ export default function Home() {
     <SafeAreaView style={styles.container}>
       <Header />
       <CardList data={data} />
+      <Footer />
     </SafeAreaView>
   );
 }

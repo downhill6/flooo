@@ -12,7 +12,7 @@ export function EmptyCard() {
 
 export function Card() {
   return (
-    <Box bg="custom.card" p="3.5" mx="4" my="1">
+    <Box bg="custom.white" p="3.5" mx="4" my="1">
       <Box flexDirection="row">
         <Text color="custom.gray" flex="1">
           2023-12-15 12:52:03
