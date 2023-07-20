@@ -11,6 +11,14 @@
     "ios": {
       "bundleIdentifier": "com.downhill.flooo"
     },
-    "plugins": ["expo-router"]
+    "plugins": ["expo-router"],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "268bf3c9-b3f7-4bf2-8537-14c07728088c"
+      }
+    }
   }
 }
