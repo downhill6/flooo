@@ -1,5 +1,6 @@
 import React from 'react';
 import {WebView} from 'react-native-webview';
+import {Platform} from 'react-native';
 
 type CommandsType = {
   tag:
@@ -31,6 +32,10 @@ export function EditorCore(props: {
   onSaveValue: (value: string) => void;
 }) {
   const {webviewRef, onSaveValue} = props;
+  const source =
+    Platform.OS === 'ios'
+      ? 'static.bundle/editor.html'
+      : 'file:///android_asset/editor.html';
 
   return (
     <WebView
@@ -45,7 +50,9 @@ export function EditorCore(props: {
       }}
       ref={webviewRef}
       originWhitelist={['*']}
-      source={require('../../assets/editor.html')}
+      allowFileAccess={true} // 允许通过 file://的形式加载资源
+      allowingReadAccessToURL="*"
+      source={{uri: source}}
     />
   );
 }
